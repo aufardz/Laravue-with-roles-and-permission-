@@ -3,12 +3,13 @@ import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
-import NavLink from '@/Components/NavLink.vue';
+// import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/inertia-vue3';
 import BreezeNavLink from "@/Components/NavLink.vue";
 
 const showingNavigationDropdown = ref(false);
+
 </script>
 
 <template>
@@ -45,6 +46,24 @@ const showingNavigationDropdown = ref(false);
                                     <BreezeNavLink :href="route('post.index')" :active="route().current('post.index')">
                                         Post
                                     </BreezeNavLink>
+                                    <!-- <ResponsiveNavLink :href="route('home')" :active="route().current('home')">
+                                        Dashboard
+                                    </ResponsiveNavLink>
+                                    <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                        Dashboard
+                                    </ResponsiveNavLink>
+                                    <ResponsiveNavLink :href="route('user.index')" :active="route().current('user.index')">
+                                        Dashboard
+                                    </ResponsiveNavLink>
+                                    <ResponsiveNavLink :href="route('permission.index')" :active="route().current('permission.index')">
+                                        Dashboard
+                                    </ResponsiveNavLink>
+                                    <ResponsiveNavLink :href="route('role.index')" :active="route().current('role.index')">
+                                        Dashboard
+                                    </ResponsiveNavLink>
+                                    <ResponsiveNavLink :href="route('post')" :active="route().current('post')">
+                                        Dashboard
+                                    </ResponsiveNavLink> -->
                                 </div>
                              </div>
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
