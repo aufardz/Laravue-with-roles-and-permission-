@@ -8,7 +8,6 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/inertia-vue3';
 
 const showingNavigationDropdown = ref(false);
-
 </script>
 
 <template>
@@ -25,28 +24,29 @@ const showingNavigationDropdown = ref(false);
                                     <ApplicationLogo class="block h-9 w-auto" />
                                 </Link>
                             </div>
-
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <BreezeNavLink :href="route('home')" :active="route().current('home')">
-                                    Home
-                                </BreezeNavLink>
-                                <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
-                                </BreezeNavLink>
-                                <BreezeNavLink :href="route('user.index')" :active="route().current('user.index')">
-                                    Users
-                                </BreezeNavLink>
-                                <BreezeNavLink :href="route('permission.index')" :active="route().current('permission.index')">
-                                    Permission
-                                </BreezeNavLink>
-                                <BreezeNavLink :href="route('role.index')" :active="route().current('role.index')">
-                                    Role
-                                </BreezeNavLink>
-                                <BreezeNavLink :href="route('post.index')" :active="route().current('post.index')">
-                                    Post
-                                </BreezeNavLink>
-                            </div>
+                                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                    <BreezeNavLink :href="route('home')" :active="route().current('home')">
+                                        Home
+                                    </BreezeNavLink>
+                                    <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')">
+                                        Dashboard
+                                    </BreezeNavLink>
+                                    <BreezeNavLink :href="route('user.index')" :active="route().current('user.index')">
+                                        Users
+                                    </BreezeNavLink>
+                                    <BreezeNavLink :href="route('permission.index')" :active="route().current('permission.index')">
+                                        Permission
+                                    </BreezeNavLink>
+                                    <BreezeNavLink :href="route('role.index')" :active="route().current('role.index')">
+                                        Role
+                                    </BreezeNavLink>
+                                    <BreezeNavLink :href="route('post.index')" :active="route().current('post.index')">
+                                        Post
+                                    </BreezeNavLink>
+                                </div>
+                             </div>
+                        <div class="hidden sm:flex sm:items-center sm:ml-6">
                             <!-- Settings Dropdown -->
                             <div class="ml-3 relative">
                                 <Dropdown align="right" width="48">
